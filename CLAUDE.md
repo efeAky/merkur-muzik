@@ -12,7 +12,7 @@ See `docs/animations.md` for animation conventions (to be filled in by the teamm
 - Framework: Next.js (App Router)
 - Language: TypeScript
 - Styling: Tailwind CSS v4 — no `tailwind.config.js`; theme tokens (colors, fonts) are defined via `@theme` in `app/globals.css`
-- Animation: [TODO — teammate to fill in once decided, e.g. Framer Motion / GSAP]
+- Animation: GSAP
 - Package manager: npm
 - Deployment: Vercel, domain: merkursanat.com
 
