@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
 import { Libre_Caslon_Text, Hanken_Grotesk } from "next/font/google";
+import { PrivacyModalProvider } from "@/components/PrivacyModalContext";
+// Google Analytics kullanılmadığı için şu an devre dışı - tekrar
+// etkinleştirmek için bu importu ve aşağıdaki <CookieConsentBanner />
+// kullanımını geri açın.
+// import { CookieConsentBanner } from "@/components/CookieConsentBanner";
 import "./globals.css";
 
 const libreCaslonText = Libre_Caslon_Text({
@@ -39,7 +44,10 @@ export default function RootLayout({
       </head>
       <body className="font-body">
         <div className="grain-overlay" />
-        {children}
+        <PrivacyModalProvider>
+          {children}
+          {/* <CookieConsentBanner /> */}
+        </PrivacyModalProvider>
       </body>
     </html>
   );
