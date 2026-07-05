@@ -20,7 +20,7 @@ export function AboutSection() {
 
         <div className="mt-8 max-w-3xl space-y-6 text-lg leading-relaxed text-black/70">
           <p>
-            Merkür Müzik olarak, müziğin evrensel dilini ve dönüştürücü
+            Merkür Sanat olarak, müziğin evrensel dilini ve dönüştürücü
             gücünü her yaştan sanatseverle buluşturmak amacıyla yola çıktık.
             T.C. Millî Eğitim Bakanlığı (MEB) onaylı bir kurum olmanın
             verdiği sorumlulukla; çocuklara, gençlere ve ruhunu müzikle
@@ -36,7 +36,7 @@ export function AboutSection() {
         </div>
 
         <h3 className="mt-16 font-display text-2xl text-black md:text-3xl">
-          Neden Merkür Müzik?
+          Neden Merkür Sanat?
         </h3>
         <div className="mt-4 h-1 w-16 bg-orange-500" />
 
@@ -68,7 +68,7 @@ export function AboutSection() {
             istiyorsanız doğru yerdesiniz.
           </p>
           <p>
-            Merkür Müzik ailesi olarak, notaların büyülü dünyasında kendi
+            Merkür Sanat ailesi olarak, notaların büyülü dünyasında kendi
             hikayesini yazmak isteyen herkesi samimi ve ilham dolu
             akademimize davet ediyoruz.
           </p>

@@ -13,7 +13,7 @@ export function Footer() {
     <footer className="mt-auto w-full border-t border-black/10 bg-white">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-5 py-6 md:flex-row md:px-16">
         <div className="flex flex-col items-center gap-4 md:items-start">
-          <div className="font-display text-lg text-black">Merkür Müzik</div>
+          <div className="font-display text-lg text-black">Merkür Sanat</div>
           <p className="max-w-xs text-center text-sm text-black/60 md:text-left">
             Sanatın ve eğitimin buluştuğu nokta. Müzikle dolu bir gelecek için
             buradayız.
