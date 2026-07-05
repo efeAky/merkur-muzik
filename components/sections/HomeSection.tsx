@@ -40,7 +40,7 @@ export function HomeSection() {
                 alt="Piano"
               />
             </div>
-            <div className="flex flex-col items-center rounded-sm border border-black/5 bg-gray-50 p-4 text-center md:p-8">
+            <div className="flex flex-col items-center rounded-sm border border-black/5 bg-gray-100 p-4 text-center md:p-8">
               <div className="mb-2 font-display text-3xl text-orange-500 md:text-5xl">
                 25+
               </div>
