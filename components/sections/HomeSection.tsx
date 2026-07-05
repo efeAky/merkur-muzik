@@ -4,7 +4,7 @@ export function HomeSection({}: HomeSectionProps) {
   return (
     <section
       id="home"
-      className="relative scroll-mt-16 overflow-hidden bg-surface-container-lowest py-32"
+      className="relative scroll-mt-16 overflow-hidden bg-surface-container-lowest pb-32 pt-16"
     >
       <div className="pointer-events-none absolute right-0 top-0 h-full w-1/3 opacity-5">
         <span className="material-symbols-outlined text-secondary text-[40rem]">
@@ -26,17 +26,9 @@ export function HomeSection({}: HomeSectionProps) {
             saygın konservatuvarlarından mezun eğitmen kadrosuyla, her yaştan
             sanatsevere kapılarını açmaktadır.
           </p>
-          <div className="pt-6">
-            <a
-              href="#"
-              className="border-b border-secondary pb-1 text-xs uppercase tracking-widest text-secondary transition-all hover:border-primary hover:text-primary"
-            >
-              Hikayemizi Okuyun
-            </a>
-          </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4 lg:mt-10">
           {/* Images/Stats content remains same */}
           <div className="space-y-4">
             <div className="h-64 overflow-hidden rounded-sm border border-outline-variant/30">
