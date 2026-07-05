@@ -3,14 +3,14 @@ import { courses } from "@/data/courses";
 
 export function CoursesSection() {
   return (
-    <section id="courses" className="relative scroll-mt-16 bg-background py-32">
+    <section id="courses" className="relative scroll-mt-16 bg-white pb-32 pt-8">
       <div className="mx-auto max-w-7xl px-5 md:px-16">
         <div className="mb-20 flex flex-col items-end justify-between gap-8 md:flex-row">
           <div>
-            <span className="text-xs uppercase tracking-widest text-secondary">
+            <span className="text-xs uppercase tracking-widest text-orange-500">
               Eğitim Programlarımız
             </span>
-            <h2 className="mt-4 font-display text-4xl text-on-background md:text-5xl">
+            <h2 className="mt-4 font-display text-4xl text-black md:text-5xl">
               Enstrümanların Büyülü Dünyası
             </h2>
           </div>
@@ -22,8 +22,11 @@ export function CoursesSection() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4 items-stretch">
           {courses.map((course) => (
             /* Added flex flex-col to enable internal alignment */
-            <div key={course.id} className="flex flex-col space-y-4">
-              <div className="relative h-64 shrink-0 overflow-hidden rounded-sm border border-outline-variant/30 bg-surface-container-lowest">
+            <div
+              key={course.id}
+              className="flex flex-col overflow-hidden rounded-sm border border-black/10 bg-white"
+            >
+              <div className="relative h-64 shrink-0">
                 <Image
                   fill
                   className="object-cover"
@@ -33,18 +36,18 @@ export function CoursesSection() {
                 />
               </div>
               {/* Added flex-grow so the box stretches to fill the height of the card */}
-              <div className="flex grow flex-col border border-secondary/20 bg-surface-container-high p-6">
+              <div className="flex grow flex-col p-6">
                 <div className="mb-3 flex items-center gap-3">
-                  <span className="h-px w-8 bg-secondary" />
-                  <span className="text-xs uppercase tracking-[0.2em] text-secondary">
+                  <span className="h-px w-8 bg-orange-500" />
+                  <span className="text-xs uppercase tracking-[0.2em] text-orange-500">
                     {course.category}
                   </span>
                 </div>
-                <h3 className="mb-2 font-display text-xl text-on-background">
+                <h3 className="mb-2 font-display text-xl text-black">
                   {course.title}
                 </h3>
                 {/* flex-grow pushes the bottom of the description area down */}
-                <p className="text-sm text-on-surface-variant grow">
+                <p className="text-sm text-black/70 grow">
                   {course.description}
                 </p>
               </div>
