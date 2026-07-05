@@ -43,8 +43,8 @@
   --color-on-error-container: #410e0b;
 
   /* Fonts */
-  --font-display: "Libre Caslon Text", serif;
-  --font-body: "Hanken Grotesk", sans-serif;
+  --font-display: var(--font-libre-caslon-text), serif;
+  --font-body: var(--font-hanken-grotesk), sans-serif;
 }
 
 body {
