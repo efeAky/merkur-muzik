@@ -1,6 +1,6 @@
-interface HomeSectionProps {}
+import Image from "next/image";
 
-export function HomeSection({}: HomeSectionProps) {
+export function HomeSection() {
   return (
     <section
       id="home"
@@ -31,14 +31,16 @@ export function HomeSection({}: HomeSectionProps) {
         <div className="grid grid-cols-2 gap-4 lg:mt-10">
           {/* Images/Stats content remains same */}
           <div className="space-y-4">
-            <div className="h-64 overflow-hidden rounded-sm border border-black/10">
-              <img
-                className="h-full w-full object-cover"
+            <div className="relative h-64 overflow-hidden rounded-sm border border-black/10">
+              <Image
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 25vw, 50vw"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDizHipof3-5SGLYlLq_CN6Qsv8ma-Hnsk_lZJilSyBr1rg6Tje4fFihVXXxYM7SEF6mJA4zOYwcd0aYa6pF9k1Vhj90LPuVVf9-64MydcwidnZXlMZl8zF3xm8wuDUIS8RTEDWHlqPKCtV2gBA8QPq416l8YqnYqdwcfvWYJM5OAHmLJdlOm8joPCJtBeHiCnaQiMWeqrEYcu6dv8f5Xt4TRVbc2-O3fioyEfK2SjTl46x5XhudH6w4g"
                 alt="Piano"
               />
             </div>
-            <div className="flex flex-col items-center rounded-sm border border-black/5 bg-gray-50 p-4 text-center md:p-8">
+            <div className="flex flex-col items-center rounded-sm border border-black/5 bg-gray-100 p-4 text-center md:p-8">
               <div className="mb-2 font-display text-3xl text-orange-500 md:text-5xl">
                 25+
               </div>
@@ -56,9 +58,11 @@ export function HomeSection({}: HomeSectionProps) {
                 Mezun Sanatçı
               </div>
             </div>
-            <div className="h-64 overflow-hidden rounded-sm border border-black/10">
-              <img
-                className="h-full w-full object-cover"
+            <div className="relative h-64 overflow-hidden rounded-sm border border-black/10">
+              <Image
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 25vw, 50vw"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSpE_ADNUZoDrFMMY4mgcdSiW-AxB-Ek_9Ub5ThoXrcQzhji__I-TNW1bBMZ9PTW0p2ZZVfg0fVZp0Asg4Fjs2Vi2i2z5fpKwxvhiIA-UfqSCJUQo5-yKDQI6wkLaYwR5aOkCJTB6Zk2TrnSrZf2BtI3vy641fHQR32XjQn7r50O8ozUfdUS7il7Osl8mKblcZeRDflubpPLDDE973KM7fs4thvqziW7qWorWdNpmFLrVMV3NlN1fCsQ"
                 alt="Cello"
               />

@@ -1,6 +1,4 @@
-interface FooterProps {}
-
-export function Footer({}: FooterProps) {
+export function Footer() {
   return (
     <footer className="mt-auto w-full border-t border-outline-variant bg-surface-container-lowest">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-5 py-6 md:flex-row md:px-16">

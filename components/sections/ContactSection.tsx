@@ -1,6 +1,4 @@
-interface ContactSectionProps {}
-
-export function ContactSection({}: ContactSectionProps) {
+export function ContactSection() {
   return (
     // Section background stays clean white
     <section 
@@ -11,7 +9,7 @@ export function ContactSection({}: ContactSectionProps) {
         {/* Box uses the consistent beige tone */}
         <div className="relative flex flex-col items-center border border-secondary/20 bg-surface-container-high p-12 text-center shadow-lg md:p-24">
           
-          <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-transparent via-secondary to-transparent opacity-50" />
+          <div className="absolute left-0 top-0 h-1 w-full bg-linear-to-r from-transparent via-secondary to-transparent opacity-50" />
 
           <h2 className="mb-12 font-display text-4xl text-on-surface md:text-5xl">
             İletişim

@@ -44,7 +44,7 @@ Update this section whenever the real structure changes — it should reflect re
 - Component files: `PascalCase.tsx`
 - `page.tsx` / `layout.tsx`: default export (required by Next.js)
 - Everything in `components/`: named export — `export function Footer() {}`
-- Props typed with a local `interface ComponentNameProps {}` directly above the component
+- Only declare a local `interface ComponentNameProps {}` when the component actually takes props, and type the ones it takes — an empty interface allows any non-nullish value and triggers the `@typescript-eslint/no-empty-object-type` lint warning, so prop-less components should just be `export function ComponentName() {}` with no props parameter
 - `'use client'` only on components that actually need it (interactivity, future animation hooks, form state) — Server Components stay the default everywhere else
 - Content/data (e.g. course listings) lives in typed objects under `data/` — never hardcoded inline inside a component
 
