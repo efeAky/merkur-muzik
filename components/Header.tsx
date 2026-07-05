@@ -32,9 +32,9 @@ export function Header() {
 
   return (
     <>
-      <header className="fixed top-0 z-50 w-full border-b border-secondary/20 bg-background/95 shadow-sm backdrop-blur-md">
+      <header className="fixed top-0 z-50 w-full border-b border-black/10 bg-white/95 shadow-sm backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-16">
-          <div className="font-display text-2xl tracking-tight text-primary">
+          <div className="font-display text-2xl tracking-tight text-black">
             Merkür Müzik
           </div>
 
@@ -47,8 +47,8 @@ export function Header() {
                   href={link.href}
                   className={`relative text-xs font-semibold uppercase tracking-wider transition-colors duration-300 ${
                     isActive
-                      ? "text-secondary"
-                      : "text-on-background hover:text-secondary"
+                      ? "text-orange-500"
+                      : "text-black/70 hover:text-orange-500"
                   }`}
                 >
                   {link.label}
@@ -62,7 +62,7 @@ export function Header() {
             onClick={() => setIsMenuOpen((prev) => !prev)}
             aria-label={isMenuOpen ? "Menüyü kapat" : "Menüyü aç"}
             aria-expanded={isMenuOpen}
-            className="flex items-center justify-center text-on-background md:hidden"
+            className="flex items-center justify-center text-black md:hidden"
           >
             <span className="material-symbols-outlined text-3xl">
               {isMenuOpen ? "close" : "menu"}
@@ -73,7 +73,7 @@ export function Header() {
 
       <div
         aria-hidden={!isMenuOpen}
-        className={`fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 bg-surface-bright/90 backdrop-blur-lg transition-all duration-300 ease-out md:hidden ${
+        className={`fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 bg-white/95 backdrop-blur-lg transition-all duration-300 ease-out md:hidden ${
           isMenuOpen
             ? "pointer-events-auto opacity-100"
             : "pointer-events-none -translate-y-3 opacity-0"
@@ -88,8 +88,8 @@ export function Header() {
               onClick={() => setIsMenuOpen(false)}
               className={`font-display text-xl tracking-wide transition-colors duration-300 ${
                 isActive
-                  ? "text-primary"
-                  : "text-on-background hover:text-primary"
+                  ? "text-orange-500"
+                  : "text-black hover:text-orange-500"
               }`}
             >
               {link.label}
