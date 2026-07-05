@@ -20,7 +20,7 @@ export function HomeSection() {
           </h2>
           <div className="h-1 w-20 bg-orange-500" />
           <p className="text-lg leading-relaxed text-black/70">
-            Merkür Müzik, on yıllardır süregelen müzikal mükemmeliyet tutkusuyla
+            Merkür Sanat, on yıllardır süregelen müzikal mükemmeliyet tutkusuyla
             kurulmuştur. Biz sadece notaları değil, müziğin arkasındaki
             felsefeyi ve ruhu öğretiyoruz. Akademimiz, dünyanın en saygın
             konservatuvarlarından mezun eğitmen kadrosuyla, her yaştan

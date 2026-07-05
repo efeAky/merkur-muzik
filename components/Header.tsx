@@ -36,7 +36,7 @@ export function Header() {
       <header className="fixed top-0 z-50 w-full border-b border-black/10 bg-white/95 shadow-sm backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-16">
           <div className="font-display text-2xl tracking-tight text-black">
-            Merkür Müzik
+            Merkür Sanat
           </div>
 
           <div className="hidden items-center gap-8 md:flex">
