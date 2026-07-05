@@ -1,8 +1,7 @@
+import Image from "next/image";
 import { courses } from "@/data/courses";
 
-interface CoursesSectionProps {}
-
-export function CoursesSection({}: CoursesSectionProps) {
+export function CoursesSection() {
   return (
     <section id="courses" className="relative scroll-mt-16 bg-background py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-16">
@@ -24,15 +23,17 @@ export function CoursesSection({}: CoursesSectionProps) {
           {courses.map((course) => (
             /* Added flex flex-col to enable internal alignment */
             <div key={course.id} className="flex flex-col space-y-4">
-              <div className="h-64 flex-shrink-0 overflow-hidden rounded-sm border border-outline-variant/30 bg-surface-container-lowest">
-                <img
-                  className="h-full w-full object-cover"
+              <div className="relative h-64 shrink-0 overflow-hidden rounded-sm border border-outline-variant/30 bg-surface-container-lowest">
+                <Image
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 768px) 25vw, 100vw"
                   alt={course.imageAlt}
                   src={course.imageSrc}
                 />
               </div>
               {/* Added flex-grow so the box stretches to fill the height of the card */}
-              <div className="flex flex-grow flex-col border border-secondary/20 bg-surface-container-high p-6">
+              <div className="flex grow flex-col border border-secondary/20 bg-surface-container-high p-6">
                 <div className="mb-3 flex items-center gap-3">
                   <span className="h-px w-8 bg-secondary" />
                   <span className="text-xs uppercase tracking-[0.2em] text-secondary">
@@ -43,7 +44,7 @@ export function CoursesSection({}: CoursesSectionProps) {
                   {course.title}
                 </h3>
                 {/* flex-grow pushes the bottom of the description area down */}
-                <p className="text-sm text-on-surface-variant flex-grow">
+                <p className="text-sm text-on-surface-variant grow">
                   {course.description}
                 </p>
               </div>
