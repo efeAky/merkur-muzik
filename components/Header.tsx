@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const navLinks = [
@@ -24,10 +25,13 @@ export function Header() {
           }
         });
       },
-      { rootMargin: "-20% 0px -70% 0px" },
+      {
+        rootMargin: "-20% 0px -70% 0px",
+      },
     );
 
     sections.forEach((section) => observer.observe(section));
+
     return () => observer.disconnect();
   }, []);
 
@@ -35,13 +39,25 @@ export function Header() {
     <>
       <header className="fixed top-0 z-50 w-full border-b border-black/10 bg-white/95 shadow-sm backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-16">
-          <div className="font-display text-2xl tracking-tight text-black">
-            Merkür Sanat
+          <div className="flex items-center gap-2 font-display text-2xl tracking-tight text-black">
+            <Image
+              src="/mercury_planet_logo_mark.png"
+              alt="Merkür Sanat Logo"
+              width={40}
+              height={40}
+              quality={100}
+              unoptimized
+              priority
+              className="h-10 w-10 object-contain"
+            />
+
+            <span>Merkür Sanat</span>
           </div>
 
           <div className="hidden items-center gap-8 md:flex">
             {navLinks.map((link) => {
               const isActive = activeSection === link.sectionId;
+
               return (
                 <a
                   key={link.label}
@@ -82,6 +98,7 @@ export function Header() {
       >
         {navLinks.map((link) => {
           const isActive = activeSection === link.sectionId;
+
           return (
             <a
               key={link.label}
