@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  /* Surface / background — warm beige light theme */
+  --color-background: #f3ebdd;
+  --color-on-background: #2a2019;
+  --color-surface: #f3ebdd;
+  --color-surface-dim: #e9dfce;
+  --color-surface-bright: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #faf5ea;
+  --color-surface-container: #f0e6d4;
+  --color-surface-container-high: #e6d8c0;
+  --color-surface-container-highest: #dacbae;
+  --color-surface-variant: #e6d8c0;
+  --color-on-surface: #2a2019;
+  --color-on-surface-variant: #6b5a47;
+  --color-outline: #a6957d;
+  --color-outline-variant: #d8c9ae;
+
+  /* Primary (deep burgundy accent) */
+  --color-primary: #8e1f3a;
+  --color-primary-container: #7a1030;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #ffd9e0;
+
+  /* Secondary (deep gold accent) */
+  --color-secondary: #a9790f;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #c79c1f;
+  --color-on-secondary-container: #2a2019;
+
+  /* Tertiary */
+  --color-tertiary: #7a4a3a;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #e3c7b2;
+  --color-on-tertiary-container: #3a221a;
+
+  /* Error */
+  --color-error: #b3261e;
+  --color-on-error: #ffffff;
+  --color-error-container: #f9dedc;
+  --color-on-error-container: #410e0b;
+
+  /* Fonts */
+  --font-display: "Libre Caslon Text", serif;
+  --font-body: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  overflow-x: hidden;
+}
+
+.grain-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.03;
+  background-image: url("https://www.transparenttextures.com/patterns/pinstripe-dark.png");
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  vertical-align: middle;
+}
