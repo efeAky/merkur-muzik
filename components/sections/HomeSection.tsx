@@ -6,12 +6,6 @@ export function HomeSection() {
       id="home"
       className="relative scroll-mt-16 overflow-hidden bg-white pb-32 pt-16"
     >
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-1/3 opacity-5">
-        <span className="material-symbols-outlined text-orange-500 text-[40rem]">
-          music_note
-        </span>
-      </div>
-
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-20 px-5 md:px-16 lg:grid-cols-2">
         <div className="space-y-8">
           <h2 className="font-display text-4xl text-black md:text-5xl">

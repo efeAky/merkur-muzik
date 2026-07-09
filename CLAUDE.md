@@ -4,8 +4,6 @@
 
 A front-end website for a music institution, built with Next.js (App Router) and TypeScript. Single-page site: Home, About, and Courses are stacked sections on one page (`app/page.tsx`), navigable via anchor links in the Header (smooth scroll to `#about`, `#courses`, etc.) rather than separate routes. Shared Header/Footer across the page. Design is sourced from Google Stitch and kept simple for now — a teammate will add animations and refined visual design in a later pass.
 
-See `docs/design-system.md` for colors, typography, layout, and component visual specs (to be filled in once the Stitch design is imported).
-See `docs/animations.md` for animation conventions (to be filled in by the teammate handling animations).
 
 ## Stack
 
@@ -28,9 +26,6 @@ components/
   sections/             # HomeSection, AboutSection, CoursesSection (each wraps its own <section id="...">)
 data/                   # typed content — courses.ts, etc.
 lib/                    # utils, shared helpers
-docs/
-  design-system.md        # colors, type, layout, component visual specs
-  animations.md           # animation conventions
 public/
   images/                 # site imagery, logos, icons
 ```
@@ -70,8 +65,8 @@ None yet — this is a static front end for now. If a contact form or any API in
 
 ## Team Rules
 
-- Update this file (and `docs/design-system.md` / `docs/animations.md`) in the same PR/commit as any change to the conventions they describe — don't let them drift from reality
-- One-off component build specs (what a specific section needs to contain, e.g. "Hero needs a headline, subtext, one CTA") belong in the task description — not in this file or in `docs/`
+- Update this file in the same PR/commit as any change to the conventions it describes — don't let it drift from reality
+- One-off component build specs (what a specific section needs to contain, e.g. "Hero needs a headline, subtext, one CTA") belong in the task description — not in this file
 - Base structure and page scaffolding is owned by [you]; animation and design polish is owned by [friend] — keep changes to `components/` scoped so both of you aren't editing the same files at once where avoidable
 - No direct pushes to `main` — all changes go through a feature branch + Pull Request
 - Every PR needs at least one review (from the other person) before merging

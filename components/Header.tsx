@@ -39,19 +39,17 @@ export function Header() {
     <>
       <header className="fixed top-0 z-50 w-full border-b border-black/10 bg-white/95 shadow-sm backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-16">
-          <div className="flex items-center gap-2 font-display text-2xl tracking-tight text-black">
+          <div className="flex items-center">
             <Image
-              src="/mercury_planet_logo_mark.png"
-              alt="Merkür Sanat Logo"
-              width={40}
-              height={40}
+              src="/logo.png"
+              alt="Merkür Müzik Sanat Merkezi Logo"
+              width={548}
+              height={120}
               quality={100}
               unoptimized
               priority
-              className="h-10 w-10 object-contain"
+              className="h-10 w-auto object-contain sm:h-10 md:h-11 lg:h-12"
             />
-
-            <span>Merkür Sanat</span>
           </div>
 
           <div className="hidden items-center gap-8 md:flex">
@@ -81,9 +79,30 @@ export function Header() {
             aria-expanded={isMenuOpen}
             className="flex items-center justify-center text-black md:hidden"
           >
-            <span className="material-symbols-outlined text-3xl">
-              {isMenuOpen ? "close" : "menu"}
-            </span>
+            <svg
+              width="27"
+              height="27"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              {isMenuOpen ? (
+                <>
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </>
+              ) : (
+                <>
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <line x1="3" y1="12" x2="21" y2="12" />
+                  <line x1="3" y1="18" x2="21" y2="18" />
+                </>
+              )}
+            </svg>
           </button>
         </nav>
       </header>
