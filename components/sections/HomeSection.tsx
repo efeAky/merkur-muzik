@@ -11,10 +11,10 @@ export function HomeSection() {
 
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-20 px-5 pt-16 md:px-16 lg:grid-cols-2">
         <div className="space-y-8">
-          <h2 className="font-display text-4xl text-black md:text-5xl">
+          <h1 className="font-display text-4xl text-black md:text-5xl">
             Müzik, Resim, Tiyatro <br />
             ve Seramikle Buluşun
-          </h2>
+          </h1>
           <div className="h-1 w-20 bg-orange-500" />
           <p className="text-lg leading-relaxed text-black/70">
             T.C. MEB onaylı, modern eğitim anlayışımız ve alanında uzman
