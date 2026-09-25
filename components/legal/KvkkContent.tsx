@@ -2,17 +2,17 @@ export function KvkkContent() {
   return (
     <>
       <p className="font-semibold text-black">
-        MERKÜR MÜZİK AKADEMİSİ – KVKK AYDINLATMA METNİ
+        MERKÜR MÜZİK VE SANAT AKADEMİSİ – KVKK AYDINLATMA METNİ
       </p>
 
       <div className="space-y-1">
         <p>
           <span className="font-semibold text-black">Veri Sorumlusu:</span>{" "}
-          Merkür Müzik Akademisi
+          Merkür Müzik ve Sanat Akademisi
         </p>
         <p>
-          <span className="font-semibold text-black">Adres:</span> Merkez,
-          Nurtanesi Sokağı 11/A, 34782 Çekmeköy/İstanbul
+          <span className="font-semibold text-black">Adres:</span> Merkez Mahallesi,
+          Nurtanesi Sokağı 11/A - 13/A, 34782 Çekmeköy/İstanbul
         </p>
         <p>
           <span className="font-semibold text-black">Telefon:</span> 0551 470
@@ -22,7 +22,7 @@ export function KvkkContent() {
 
       <p>
         6698 sayılı Kişisel Verilerin Korunması Kanunu (&ldquo;KVKK&rdquo;)
-        uyarınca, Merkür Müzik Akademisi (&ldquo;Kurum&rdquo;) olarak, veri
+        uyarınca, Merkür Müzik ve Sanat Akademisi (&ldquo;Kurum&rdquo;) olarak, veri
         sorumlusu sıfatıyla, kişisel verilerinizin güvenliğine önem veriyor ve
         sizleri bilgilendirmek istiyoruz.
       </p>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { courses } from "@/data/courses";
 
 export function CoursesSection() {
@@ -11,7 +12,7 @@ export function CoursesSection() {
               Eğitim Programlarımız
             </span>
             <h2 className="mt-4 font-display text-4xl text-black lg:text-5xl">
-              Enstrümanların Büyülü Dünyası
+              Enstrüman ve Sanat Atölyelerimiz
             </h2>
           </div>
         </div>
@@ -51,6 +52,14 @@ export function CoursesSection() {
                 <p className="text-sm text-black/70 grow sm:text-base">
                   {course.description}
                 </p>
+                {course.articleSlug && (
+                  <Link
+                    href={`/${course.articleSlug}`}
+                    className="mt-4 text-sm font-semibold text-orange-500 transition-colors hover:text-orange-600"
+                  >
+                    Detaylı bilgi →
+                  </Link>
+                )}
               </div>
             </div>
           ))}

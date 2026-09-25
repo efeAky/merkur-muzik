@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Libre_Caslon_Text, Hanken_Grotesk } from "next/font/google";
 import { PrivacyModalProvider } from "@/components/PrivacyModalContext";
+import { siteUrl } from "@/lib/site";
 // Google Analytics kullanılmadığı için şu an devre dışı - tekrar
 // etkinleştirmek için bu importu ve aşağıdaki <CookieConsentBanner />
 // kullanımını geri açın.
@@ -21,9 +22,18 @@ const hankenGrotesk = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Merkür Müzik Akademisi",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default:
+      "Merkür Müzik ve Sanat Akademisi | Çekmeköy Müzik ve Sanat Kursları",
+    template: "%s | Merkür Müzik ve Sanat Akademisi",
+  },
   description:
-    "Merkür Müzik Akademisi — klasik disiplini modern vizyonla birleştirerek yeteneklerinizi sanata dönüştürüyor.",
+    "Merkür Müzik ve Sanat Akademisi — klasik disiplini modern vizyonla birleştirerek yeteneklerinizi sanata dönüştürüyor.",
+  // Renders <meta name="google-site-verification"> in <head> for Search Console.
+  verification: {
+    google: "geOQBdv-R8UFD0EX82oVx1OwIbH0eovwaooPKy77OAw",
+  },
 };
 
 export default function RootLayout({

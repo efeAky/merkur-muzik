@@ -2,7 +2,7 @@
 
 ## Overview
 
-A front-end website for a music institution, built with Next.js (App Router) and TypeScript. Single-page site: Home, About, and Courses are stacked sections on one page (`app/page.tsx`), navigable via anchor links in the Header (smooth scroll to `#about`, `#courses`, etc.) rather than separate routes. Shared Header/Footer across the page. Design is sourced from Google Stitch and kept simple for now — a teammate will add animations and refined visual design in a later pass.
+A front-end website for a music institution, built with Next.js (App Router) and TypeScript. Single-page site: Home, About, and Courses are stacked sections on one page (`app/page.tsx`), navigable via anchor links in the Header (smooth scroll to `#about`, `#courses`, etc.) rather than separate routes. Shared Header/Footer across the page. Alongside it, a small set of SEO article pages (e.g. `/piyano-dersi-cekmekoy`) is statically generated from `data/articles.ts` via `app/[slug]/page.tsx`. Design is sourced from Google Stitch and kept simple for now — a teammate will add animations and refined visual design in a later pass.
 
 
 ## Stack
@@ -19,16 +19,24 @@ A front-end website for a music institution, built with Next.js (App Router) and
 This project does **not** use a `src/` directory — `app/`, `components/`, etc. live at the project root.
 
 ```
-app/                    # single route — page.tsx (renders all sections), layout.tsx
+app/
+  page.tsx              # home — renders all sections
+  layout.tsx            # root layout, site-wide metadata (title template, Search Console verification)
+  [slug]/page.tsx       # SEO article pages, one per entry in data/articles.ts (unknown slugs 404)
+  sitemap.ts, robots.ts # generated /sitemap.xml and /robots.txt
 components/
-  Header.tsx            # nav with anchor links to sections
+  Header.tsx            # nav with root-relative anchor links (/#about) so it works on sub-pages too
   Footer.tsx
-  sections/             # HomeSection, AboutSection, CoursesSection (each wraps its own <section id="...">)
-data/                   # typed content — courses.ts, etc.
-lib/                    # utils, shared helpers
+  Article.tsx           # renders an SEO article (H1 title, sections as H2→H6 per the SEO brief)
+  LocalBusinessJsonLd.tsx # schema.org LocalBusiness JSON-LD, rendered on the home page
+  sections/             # HomeSection, AboutSection, CoursesSection, ContactSection (each wraps its own <section id="...">)
+data/                   # typed content — courses.ts, articles.ts, localBusiness.ts (JSON-LD), etc.
+lib/                    # utils, shared helpers — site.ts holds the canonical origin (https://www.merkursanat.com)
 public/
   images/                 # site imagery, logos, icons
 ```
+
+SEO status, open decisions and next steps: `tasks/seo-summary.md`.
 
 Update this section whenever the real structure changes — it should reflect reality, not a plan.
 
@@ -61,7 +69,7 @@ None yet — this is a static front end for now. If a contact form or any API in
 
 - Dev: `npm run dev`
 - Build: `npm run build`
-- Lint: `[TODO: fill in]`
+- Lint: `npm run lint`
 
 ## Team Rules
 

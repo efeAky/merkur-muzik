@@ -135,7 +135,7 @@ export function ImageSlider() {
             className="max-w-xl [animation:slider-caption-in_0.8s_ease-out]"
           >
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-orange-400">
-              Merkür Müzik Sanat Merkezi
+              Merkür Müzik ve Sanat Akademisi
             </p>
             <p className="font-display text-4xl text-white sm:text-5xl md:text-6xl">
               {sliderImages[activeIndex].title}

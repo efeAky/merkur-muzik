@@ -11,17 +11,15 @@ export function HomeSection() {
 
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-20 px-5 pt-16 md:px-16 lg:grid-cols-2">
         <div className="space-y-8">
-          <h2 className="font-display text-4xl text-black md:text-5xl">
-            Kökleri Sanatla <br />
-            Beslenen Bir Miras
-          </h2>
+          <h1 className="font-display text-4xl text-black md:text-5xl">
+            Müzik, Resim, Tiyatro <br />
+            ve Seramikle Buluşun
+          </h1>
           <div className="h-1 w-20 bg-orange-500" />
           <p className="text-lg leading-relaxed text-black/70">
-            Merkür Sanat, on yıllardır süregelen müzikal mükemmeliyet tutkusuyla
-            kurulmuştur. Biz sadece notaları değil, müziğin arkasındaki
-            felsefeyi ve ruhu öğretiyoruz. Akademimiz, dünyanın en saygın
-            konservatuvarlarından mezun eğitmen kadrosuyla, her yaştan
-            sanatsevere kapılarını açmaktadır.
+            T.C. MEB onaylı, modern eğitim anlayışımız ve alanında uzman
+            eğitmen kadromuzla müzik, resim, tiyatro ve seramik yolculuğunuza
+            eşlik etmek için kapılarımızı açtık.
           </p>
         </div>
 

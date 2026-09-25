@@ -2,11 +2,11 @@ export function PrivacyPolicyContent() {
   return (
     <>
       <p className="font-semibold text-black">
-        MERKÜR MÜZİK AKADEMİSİ – GİZLİLİK VE ÇEREZ POLİTİKASI
+        MERKÜR MÜZİK VE SANAT AKADEMİSİ – GİZLİLİK VE ÇEREZ POLİTİKASI
       </p>
 
       <p>
-        Bu Gizlilik ve Çerez Politikası, Merkür Müzik Akademisi olarak
+        Bu Gizlilik ve Çerez Politikası, Merkür Müzik ve Sanat Akademisi olarak
         işlettiğimiz web sitemizi ziyaret eden kullanıcıların gizliliğini
         korumak ve sitedeki temel çerez kullanımına ilişkin sizleri
         bilgilendirmek amacıyla hazırlanmıştır.
@@ -15,7 +15,7 @@ export function PrivacyPolicyContent() {
       <div>
         <h4 className="font-semibold text-black">1. Gizlilik İlkeleri</h4>
         <p className="mt-2">
-          Merkür Müzik Akademisi, web sitesi üzerinden veya iletişim
+          Merkür Müzik ve Sanat Akademisi, web sitesi üzerinden veya iletişim
           kanallarımız aracılığıyla bizimle paylaştığınız hiçbir kişisel
           veriyi izinsiz olarak üçüncü şahıslarla paylaşmaz, satmaz veya
           ticari amaçla kullanmaz. Verileriniz yalnızca size daha iyi bir
@@ -74,7 +74,7 @@ export function PrivacyPolicyContent() {
           5. Politika Güncellemeleri
         </h4>
         <p className="mt-2">
-          Merkür Müzik Akademisi, yasal mevzuattaki değişikliklere veya web
+          Merkür Müzik ve Sanat Akademisi, yasal mevzuattaki değişikliklere veya web
           sitesinin teknik altyapısına bağlı olarak bu Gizlilik ve Çerez
           Politikası&rsquo;nı dilediği zaman güncelleme hakkını saklı tutar.
           Güncel politika sitede yayınlandığı andan itibaren geçerlilik

@@ -32,6 +32,21 @@ export const sliderImages: SliderImage[] = [
     title: "Gitar Eğitimi",
   },
   {
+    src: "/images/theatre_slider.jpg",
+    alt: "Tiyatro eğitimi",
+    title: "Tiyatro Eğitimi",
+  },
+  {
+    src: "/images/ceramic_slider.jpg",
+    alt: "Seramik eğitimi",
+    title: "Seramik Eğitimi",
+  },
+  {
+    src: "/images/painting_slider.jpg",
+    alt: "Resim eğitimi",
+    title: "Resim Eğitimi",
+  },
+  {
     src: "/images/collage_piano.webp",
     alt: "Derslerimizden kareler",
     title: "Derslerimizden Kareler",

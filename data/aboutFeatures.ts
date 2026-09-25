@@ -7,31 +7,31 @@ export interface AboutFeature {
 
 export const aboutFeatures: AboutFeature[] = [
   {
-    id: "meb-onayli",
+    id: "uzman-egitmen-kadrosu",
     icon: "workspace_premium",
-    title: "MEB Onaylı Eğitim Programları",
+    title: "Uzman Eğitmen Kadrosu",
     description:
-      "Eğitim kalitemizi resmi standartlarla belgeliyor, kursiyerlerimize geleceğe güvenle bakabilecekleri resmi sertifikalar sunuyoruz.",
+      "Alanında uzman, akademik kariyer yapmış, pedagojik formasyona sahip ve her şeyden önemlisi öğretmeyi seven dinamik bir eğitmen kadrosuyla çalışıyoruz.",
   },
   {
-    id: "enstruman-yelpazesi",
-    icon: "piano",
-    title: "Geniş Enstrüman Yelpazesi",
-    description:
-      "Piyanodan gitara, kemandan yan flüte ve vurmalı çalgılara kadar uzanan geniş bir eğitim yelpazesiyle her ilgiye hitap ediyoruz.",
-  },
-  {
-    id: "kisisellestirilmis-yaklasim",
+    id: "bireysel-egitim-programlari",
     icon: "tune",
-    title: "Kişiselleştirilmiş Yaklaşım",
+    title: "Bireysel Eğitim Programları",
     description:
-      "Her bireyin öğrenme hızının ve müzikal yolculuğunun benzersiz olduğunu biliyor, derslerimizi kişiye özel metodolojilerle destekliyoruz.",
+      "Her bireyin öğrenme hızının, ilgi alanının ve yeteneğinin farklı olduğunun bilinciyle, her öğrencimize özel öğrenme haritaları çıkarıyoruz.",
   },
   {
-    id: "ilham-veren-ortam",
-    icon: "auto_awesome",
-    title: "İlham Veren Sanat Ortamı",
+    id: "modern-ve-donanimli-siniflar",
+    icon: "piano",
+    title: "Modern ve Donanımlı Sınıflar",
     description:
-      "Teorik eğitimi pratikle ve keyifle birleştiren, motivasyonu yüksek ve modern donanımlı sınıflarda eğitim veriyoruz.",
+      "Enstrüman kalitesinden sınıf akustiğine kadar her ayrıntının titizlikle tasarlandığı, sanatsal üretime ilham veren modern fiziki alanlarda eğitim veriyoruz.",
+  },
+  {
+    id: "sosyal-ve-kulturel-gelisim",
+    icon: "auto_awesome",
+    title: "Sosyal ve Kültürel Gelişim",
+    description:
+      "Yıl sonu konserleri, resim sergileri, atölyeler ve sahne performansları ile öğrencilerimizin sahne heyecanını deneyimlemelerini ve özgüven kazanmalarını sağlıyoruz.",
   },
 ];
