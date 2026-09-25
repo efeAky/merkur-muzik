@@ -5,6 +5,8 @@ export interface Course {
   description: string;
   imageAlt: string;
   imageSrc: string;
+  /** Slug of the matching SEO article page in data/articles.ts, if any. */
+  articleSlug?: string;
 }
 
 export const courses: Course[] = [
@@ -19,6 +21,7 @@ export const courses: Course[] = [
   },
   {
     id: "piano",
+    articleSlug: "piyano-dersi-cekmekoy",
     title: "Piyano Eğitimi",
     category: "Konservatuvar",
     description:
@@ -37,6 +40,7 @@ export const courses: Course[] = [
   },
   {
     id: "drum-course",
+    articleSlug: "bateri-dersi-cekmekoy",
     title: "Bateri Eğitimi",
     category: "Vurmalı Çalgılar",
     description:
@@ -55,6 +59,7 @@ export const courses: Course[] = [
   },
   {
     id: "painting",
+    articleSlug: "resim-kursu-cekmekoy",
     title: "Resim Eğitimi",
     category: "Görsel Sanatlar",
     description:
@@ -64,6 +69,7 @@ export const courses: Course[] = [
   },
   {
     id: "ceramic",
+    articleSlug: "seramik-workshop-cekmekoy",
     title: "Seramik Eğitimi",
     category: "Görsel Sanatlar",
     description:
@@ -73,6 +79,7 @@ export const courses: Course[] = [
   },
   {
     id: "theatre",
+    articleSlug: "drama-dersi-cekmekoy",
     title: "Tiyatro Eğitimi",
     category: "Sahne Sanatları",
     description:

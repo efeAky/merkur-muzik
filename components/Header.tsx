@@ -1,18 +1,23 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+// Root-relative hashes so the links also work from the article sub-pages.
 const navLinks = [
-  { href: "#home", label: "Ana Sayfa", sectionId: "home" },
-  { href: "#about", label: "Hakkımızda", sectionId: "about" },
-  { href: "#courses", label: "Kurslarımız", sectionId: "courses" },
-  { href: "#contact", label: "İletişim", sectionId: "contact" },
+  { href: "/#home", label: "Ana Sayfa", sectionId: "home" },
+  { href: "/#about", label: "Hakkımızda", sectionId: "about" },
+  { href: "/#courses", label: "Kurslarımız", sectionId: "courses" },
+  { href: "/#contact", label: "İletişim", sectionId: "contact" },
 ];
 
 export function Header() {
   const [activeSection, setActiveSection] = useState<string>("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // Section highlighting only applies on the home page.
+  const isHome = usePathname() === "/";
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -39,8 +44,8 @@ export function Header() {
     <>
       <header className="fixed top-0 z-50 w-full bg-black shadow-sm">
         <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:px-16">
-          <a
-            href="#home"
+          <Link
+            href="/#home"
             aria-label="Ana sayfaya git"
             className="relative aspect-[4.6] h-9 overflow-hidden sm:h-9 md:h-10 lg:h-11"
           >
@@ -53,14 +58,14 @@ export function Header() {
               priority
               className="object-cover object-center"
             />
-          </a>
+          </Link>
 
           <div className="hidden items-center gap-8 md:flex">
             {navLinks.map((link) => {
-              const isActive = activeSection === link.sectionId;
+              const isActive = isHome && activeSection === link.sectionId;
 
               return (
-                <a
+                <Link
                   key={link.label}
                   href={link.href}
                   className={`relative text-xs font-semibold uppercase tracking-wider transition-colors duration-300 ${
@@ -70,7 +75,7 @@ export function Header() {
                   }`}
                 >
                   {link.label}
-                </a>
+                </Link>
               );
             })}
           </div>
@@ -119,10 +124,10 @@ export function Header() {
         }`}
       >
         {navLinks.map((link) => {
-          const isActive = activeSection === link.sectionId;
+          const isActive = isHome && activeSection === link.sectionId;
 
           return (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               onClick={() => setIsMenuOpen(false)}
@@ -133,7 +138,7 @@ export function Header() {
               }`}
             >
               {link.label}
-            </a>
+            </Link>
           );
         })}
       </div>
